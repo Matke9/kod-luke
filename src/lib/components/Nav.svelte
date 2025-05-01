@@ -2,29 +2,26 @@
 	let isOpen: boolean = false;
 </script>
 
-<nav class="fixed z-50 w-full bg-white shadow-md dark:bg-gray-900">
+<nav class="fixed z-50 w-full bg-[var(--yellow2)] shadow-md">
 	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 		<div class="flex h-16 items-center justify-between">
 			<!-- Logo -->
-			<div class="text-accent flex-shrink-0 text-xl font-bold">
+			<div class="flex-shrink-0 text-xl font-bold text-[var(--grey1)]">
 				<a href="/">Restoran</a>
 			</div>
 
 			<!-- Desktop links -->
-			<div class="hidden space-x-8 text-gray-800 lg:flex dark:text-white">
-				<a href="/meni" class="hover:text-accent">Meni</a>
-				<a href="/o-nama" class="hover:text-accent">O nama</a>
-				<a href="/galerija" class="hover:text-accent">Galerija</a>
-				<a href="/lokacija" class="hover:text-accent">Lokacija</a>
-				<a href="/kontakt" class="hover:text-accent">Kontakt</a>
+			<div class="hidden space-x-8 text-[var(--grey1)] lg:flex">
+				<a href="/meni" class="">Meni</a>
+				<a href="/o-nama" class="">O nama</a>
+				<a href="/galerija" class="">Galerija</a>
+				<a href="/lokacija" class="">Lokacija</a>
+				<a href="/kontakt" class="">Kontakt</a>
 			</div>
 
 			<!-- Mobile menu button -->
 			<div class="lg:hidden">
-				<button
-					on:click={() => (isOpen = !isOpen)}
-					class="text-gray-800 focus:outline-none dark:text-white"
-				>
+				<button on:click={() => (isOpen = !isOpen)} class="text-[var(--grey1)] focus:outline-none">
 					<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						{#if isOpen}
 							<path
@@ -49,18 +46,15 @@
 
 	<!-- Mobile dropdown menu -->
 	{#if isOpen}
-		<div class="space-y-2 bg-white px-4 pb-4 pt-2 shadow-md lg:hidden dark:bg-gray-900">
-			<a href="/meni" class="hover:text-accent block text-gray-800 dark:text-white">Meni</a>
-			<a href="/o-nama" class="hover:text-accent block text-gray-800 dark:text-white">O nama</a>
-			<a href="/galerija" class="hover:text-accent block text-gray-800 dark:text-white">Galerija</a>
-			<a href="/lokacija" class="hover:text-accent block text-gray-800 dark:text-white">Lokacija</a>
-			<a href="/kontakt" class="hover:text-accent block text-gray-800 dark:text-white">Kontakt</a>
+		<div class="space-y-2 bg-[var(--yellow3)] px-4 pt-2 pb-4 shadow-md lg:hidden">
+			<a href="/meni" class="block text-[var(--grey1)]">Meni</a>
+			<a href="/o-nama" class="block text-[var(--grey1)]">O nama</a>
+			<a href="/galerija" class="block text-[var(--grey1)]">Galerija</a>
+			<a href="/lokacija" class="block text-[var(--grey1)]">Lokacija</a>
+			<a href="/kontakt" class="block text-[var(--grey1)]">Kontakt</a>
 		</div>
 	{/if}
 </nav>
 
 <style>
-	.text-accent {
-		color: #339989; /* možeš promeniti u boju koju koristiš za akcent */
-	}
 </style>

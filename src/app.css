@@ -1,3 +1,12 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+
+*{
+    --grey1: #1e2329;
+    --grey2: #2a2f35;
+    --grey3: #3b4046;
+    --yellow1: #f6a403;
+    --yellow2: #f5b402;
+    --yellow3: #fed255;
+}
