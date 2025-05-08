@@ -6,4 +6,6 @@
 </script>
 
 <Nav></Nav>
-{@render children()}
+<div class="px-20">
+	{@render children()}
+</div>

@@ -10,3 +10,7 @@
     --yellow2: #f5b402;
     --yellow3: #fed255;
 }
+
+body{
+    background-color: var(--grey1);
+}

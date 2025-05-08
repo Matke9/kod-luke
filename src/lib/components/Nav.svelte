@@ -2,12 +2,15 @@
 	let isOpen: boolean = false;
 </script>
 
-<nav class="fixed z-50 w-full bg-[var(--yellow2)] shadow-md">
-	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-		<div class="flex h-16 items-center justify-between">
+<nav class="absolute z-50 w-full bg-[var(--yellow2)] shadow-md">
+	<div class="mx-auto px-20 sm:px-20 lg:px-20">
+		<div class="flex h-20 items-center justify-between">
 			<!-- Logo -->
 			<div class="flex-shrink-0 text-xl font-bold text-[var(--grey1)]">
-				<a href="/">Restoran</a>
+				<a class="flex-direction-column align-center flex" href="/"
+					><img class="h-16 w-16" src="LukaSilniLogo.png" alt="" />
+					<h1 class="text-center">Kod Luke Silnog</h1></a
+				>
 			</div>
 
 			<!-- Desktop links -->
